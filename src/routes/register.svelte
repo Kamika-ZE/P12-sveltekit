@@ -1,22 +1,13 @@
 <div class="container-fluid d-flex justify-content-center align-items-center">
     <div class="card card-connexion">
         <div class="card-body">
-            <h6 class="card-subtitle text-center">Continuer avec</h6>
-            <div class="card-text text-center my-3 fs-2 fw-bold">
-                <a href="#" class="card-link text-decoration-none text-dark"><i class="fab fa-github"></i></a>
-                <a href="#" class="card-link text-decoration-none text-dark"><i class="fab fa-google"></i></a>
-                <a href="#" class="card-link text-decoration-none text-dark"><i class="fab fa-linkedin"></i></a>
-            </div>
             <form>
-                <h5 class="card-title text-center mb-4">Ou utilisez votre email</h5>
-
                 <div class="form-floating mb-3">
                     <input type="pseudo" class="form-control" id="floatingInputPseudo"
                     placeholder="Pseudo">
                     <label for="floatingInputPseudo">
                         Nom d'utilisateur
                     </label>
-
                 </div>
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInputEmail" aria-describedby="emailHelp" placeholder="name@example.com">
@@ -41,3 +32,9 @@
         </div>
     </div>
 </div>
+
+<style>
+    .card {
+        width: 400px;
+    }
+</style>

@@ -1,4 +1,6 @@
-
+<script>
+    let isLogged = true;
+</script>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -14,14 +16,25 @@
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark" type="submit">Search</button>
             </form>
+            {#if isLogged}
             <ul class="navbar-nav ms-auto d-flex my-2 my-lg-0 gap-2 align-items-center">
                 <li class="nav-item">
-                    <a href="/login" class="btn btn-dark">Se connecter</a>
+                    <a href="" class="btn btn-dark">Tableau de bord</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/register" class="btn btn-outline-dark">S'enregistrer</a>
+                    <a href="" class="btn btn-outline-dark">Se déconnecter</a>
                 </li>
             </ul>
+            {:else}
+                <ul class="navbar-nav ms-auto d-flex my-2 my-lg-0 gap-2 align-items-center">
+                    <li class="nav-item">
+                        <a href="/login" class="btn btn-dark">Se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/register" class="btn btn-outline-dark">S'enregistrer</a>
+                    </li>
+                </ul>
+            {/if}
         </div>
     </div>
   </nav>
